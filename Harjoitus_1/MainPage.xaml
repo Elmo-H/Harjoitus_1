@@ -8,7 +8,19 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <StackPanel>
+        
+        <Button Margin="20" Click="Button_Click">Testipainike</Button>
+        
+        <TextBlock Width="500" HorizontalAlignment="Left" Margin="20" FontSize="30" Foreground="BlanchedAlmond">Tervetuloa ohjelman kättäjäksi</TextBlock>
+        
+        <TextBox Name="UserText" Margin="20"></TextBox>
 
-    </Grid>
+        <ComboBox Margin="20" Width="200">
+            <ComboBoxItem>Banaani</ComboBoxItem>
+            <ComboBoxItem>Omena</ComboBoxItem>
+            <ComboBoxItem>Hunajaherkkumeloni</ComboBoxItem>
+        </ComboBox>
+        
+    </StackPanel>
 </Page>

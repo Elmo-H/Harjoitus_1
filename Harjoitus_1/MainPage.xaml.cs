@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -25,6 +26,13 @@ namespace Harjoitus_1
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            String txt = UserText.Text;
+            Debug.WriteLine("Nappia on painettu!");
+            Debug.WriteLine("Tervetuloa, " + txt);
         }
     }
 }
